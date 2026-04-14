@@ -1,0 +1,27 @@
+﻿<Window x:Class="MiniCrudEscola.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="CRUD Alunos" Height="400" Width="600">
+
+    <Grid Margin="10">
+        <StackPanel>
+
+            <TextBlock Text="Id"/>
+            <TextBox Name="txtId" Margin="5"/>
+
+            <TextBlock Text="Nome"/>
+            <TextBox Name="txtNome" Margin="5"/>
+
+            <TextBlock Text="Idade"/>
+            <TextBox Name="txtIdade" Margin="5"/>
+
+            <Button Content="Inserir" Click="Inserir_Click" Margin="5"/>
+            <Button Content="Listar" Click="Listar_Click" Margin="5"/>
+            <Button Content="Atualizar" Click="Atualizar_Click" Margin="5"/>
+            <Button Content="Remover" Click="Remover_Click" Margin="5"/>
+
+            <DataGrid Name="dataGrid" Margin="5"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
